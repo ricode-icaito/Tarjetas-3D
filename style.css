@@ -1,0 +1,169 @@
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(img/fondo.png);
+}
+
+.titulo {
+  color: white;
+  font-family: 'Comic Sans MS', sans-serif;
+  font-size: 30px;
+  text-shadow: 0px 0px 10px rgb(223, 32, 32);
+  bottom: 20px;
+  left: 200px;
+  position: absolute;
+}
+.container {
+  perspective: 150px;
+  width: 300px;
+  height: 150px;
+  position: relative;
+}
+
+.tarjeta {
+  width: 50px;
+  height: 70px;
+  background-color: #442222;
+  font-size: 40px;
+  position: absolute;
+  top: 10px;
+  left: 125px;
+  border-radius: 8px;
+  border: 1px dashed black;
+  text-align: center;
+  cursor: pointer;
+  animation: Carrusel 10s linear infinite;
+}
+
+@keyframes Carrusel
+{
+  from {
+    transform: rotateY(360deg) translateZ(100px);
+    z-index: 10;
+    opacity: 0.9;
+  }
+  50% {
+    z-index: -10;
+  }
+
+  to {
+    transform: rotateX(0deg) translateZ(100px) rotateX(0deg);
+    z-index: 10;
+  }
+
+}
+
+
+#ricky-1 {
+  background-image: url(img/ricky-1.jpg);
+  background-size: cover;
+}
+
+#ricky-1:hover {
+  box-shadow: 0px 0px 10px yellow ;
+}
+
+
+#ricky-2 {
+  background-image: url(img/ricky-2.jpg);
+  background-size: cover;
+  animation-delay: -1s;
+}
+
+#ricky-2:hover {
+  box-shadow: 0px 0px 10px rgb(225, 0, 255) ;
+}
+
+#ricky-3 {
+  background-image: url(img/ricky-3.jpg);
+  background-size: cover;
+  animation-delay: -2s;
+}
+
+#ricky-3:hover {
+  box-shadow: 0px 0px 10px rgb(0, 102, 255) ;
+}
+
+
+#ricky-4 {
+  background-image: url(img/ricky-4.jpg);
+  background-size: cover;
+  animation-delay: -3s;
+}
+
+#ricky-4:hover {
+  box-shadow: 0px 0px 10px rgb(22, 17, 17) ;
+}
+
+
+#ricky-5 {
+  background-image: url(img/ricky-5.jpg);
+  background-size: cover;
+  animation-delay: -4s;
+}
+
+
+#ricky-5:hover {
+  box-shadow: 0px 0px 10px rgb(255, 0, 0) ;
+}
+
+#ricky-6 {
+  background-image: url(img/ricky-6.jpg);
+  background-size: cover;
+  animation-delay: -5s;
+}
+
+#ricky-6:hover {
+  box-shadow: 0px 0px 10px rgb(255, 166, 0) ;
+}
+
+#ricky-7 {
+  background-image: url(img/ricky-7.png);
+  background-size: cover;
+  animation-delay: -6s;
+}
+
+#ricky-7:hover {
+  box-shadow: 0px 0px 10px rgb(0, 255, 128) ;
+}
+
+#ricky-8 {
+  background-image: url(img/ricky-8.jpg);
+  background-size: cover;
+  animation-delay: -7s;
+}
+
+#ricky-8:hover {
+  box-shadow: 0px 0px 10px rgb(255, 0, 0) ;
+}
+
+#ricky-9 {
+  background-image: url(img/ricky-9.jpg);
+  background-size: cover;
+  animation-delay: -8s;
+}
+
+#ricky-9:hover {
+  box-shadow: 0px 0px 10px rgb(255, 0, 0) ;
+}
+
+#ricky-10 {
+  background-image: url(img/ricky-10.jpg);
+  background-size: cover;
+  animation-delay: -9s;
+}
+
+#ricky-10:hover {
+  box-shadow: 0px 0px 10px rgb(255, 0, 0) ;
+}
+
+.tarjeta h3 {
+  color: white;
+  font-size: 5px;
+  font-family: 'Comic Sans MS', sans-serif;
+  margin-top: 70px;
+  background-color: #0051ff;
+  border-radius: 10px;
+}
